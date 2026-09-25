@@ -2,101 +2,110 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lilis — Dulcería artesanal</title>
-  <meta name="description" content="Alfajores, chilenitos, cuchuflíes, trufas y galletas 100% artesanales, hechos con ingredientes naturales y la tradición de los sabores de Chile.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lilis Dulcería Artesanal</title>
+  <meta name="description" content="Alfajores, chilenitos, cuchuflíes, trufas y galletas 100% artesanales, hechos con ingredientes naturales y recetas de tradición chilena.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="nav">
-    <a href="#" class="logo">lilis</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
-      <span></span><span></span>
-    </button>
-    <nav id="menu" class="menu">
+    <a href="#" class="wordmark">lilis</a>
+    <nav class="nav-links" aria-label="Principal">
       <a href="#productos">Productos</a>
-      <a href="#tradicion">Tradición</a>
       <a href="#empresas">Empresas</a>
-      <a href="#contacto" class="btn btn-small">Comprar</a>
     </nav>
+    <a href="https://www.lilis.cl/tienda/" class="btn btn-sm">Comprar</a>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">Dulcería artesanal · Chile</p>
-      <h1>Lo dulce, <em>hecho a mano.</em></h1>
-      <p class="lead">Alfajores, chilenitos, cuchuflíes y más. Recetas de siempre con ingredientes naturales.</p>
-      <div class="actions">
-        <a href="https://www.lilis.cl/tienda/" class="btn">Ver tienda</a>
-        <a href="#productos" class="link">Conoce los productos →</a>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <h1>Dulces chilenos,<br><span class="accent">hechos a mano.</span></h1>
+        <p class="hero-sub">Alfajores, chilenitos y cuchuflíes con ingredientes naturales y recetas de tradición.</p>
+        <div class="hero-actions">
+          <a href="https://www.lilis.cl/tienda/" class="btn">Comprar</a>
+          <a href="#productos" class="btn btn-ghost">Ver productos</a>
+        </div>
+      </div>
+      <!-- TODO: foto hero, alfajores apilados sobre fondo neutro, 1200x1500 -->
+      <div class="ph ph-hero" role="img" aria-label="Foto de alfajores (pendiente)">
+        <span class="ph-note">Foto pendiente: alfajores</span>
       </div>
     </section>
 
-    <section id="productos" class="section">
-      <div class="section-head">
-        <h2>Productos</h2>
-        <p>100% artesanales, para cualquier ocasión.</p>
-      </div>
-      <ul class="grid">
-        <li class="card"><span class="swatch s1"></span><h3>Alfajores</h3><p>Rellenos de manjar, bañados en chocolate o en cajas temáticas.</p></li>
-        <li class="card"><span class="swatch s2"></span><h3>Chilenitos</h3><p>El clásico de siempre: hojarasca, manjar y merengue.</p></li>
-        <li class="card"><span class="swatch s3"></span><h3>Cuchuflíes</h3><p>Tradicionales o bañados en chocolate amargo o blanco.</p></li>
-        <li class="card"><span class="swatch s4"></span><h3>Cachitos</h3><p>Crujientes y rellenos, para acompañar el café.</p></li>
-        <li class="card"><span class="swatch s5"></span><h3>Trufas</h3><p>Pequeñas, intensas, para regalar o regalarse.</p></li>
-        <li class="card"><span class="swatch s6"></span><h3>Galletas</h3><p>De avena y nuez, especiales y de temporada.</p></li>
+    <section id="productos" class="products wrap">
+      <h2>Lo que hacemos</h2>
+      <p class="section-sub">Seis clásicos de la dulcería chilena, 100% artesanales.</p>
+
+      <ul class="bento">
+        <li class="cell cell-feature">
+          <!-- TODO: foto alfajores, 1200x1200 -->
+          <div class="ph t1" role="img" aria-label="Foto de alfajores (pendiente)"><span class="ph-note">Foto pendiente</span></div>
+          <h3>Alfajores</h3>
+          <p>Con manjar, bañados en chocolate o en cajas temáticas.</p>
+        </li>
+        <li class="cell">
+          <div class="ph t2" role="img" aria-label="Foto de chilenitos (pendiente)"></div>
+          <h3>Chilenitos</h3>
+          <p>Hojarasca, manjar y merengue.</p>
+        </li>
+        <li class="cell">
+          <div class="ph t3" role="img" aria-label="Foto de cuchuflíes (pendiente)"></div>
+          <h3>Cuchuflíes</h3>
+          <p>Tradicionales o con chocolate amargo o blanco.</p>
+        </li>
+        <li class="cell">
+          <div class="ph t4" role="img" aria-label="Foto de cachitos (pendiente)"></div>
+          <h3>Cachitos</h3>
+          <p>Crujientes y rellenos.</p>
+        </li>
+        <li class="cell">
+          <div class="ph t3" role="img" aria-label="Foto de trufas (pendiente)"></div>
+          <h3>Trufas</h3>
+          <p>Pequeñas e intensas.</p>
+        </li>
+        <li class="cell cell-wide">
+          <div class="ph t2" role="img" aria-label="Foto de galletas (pendiente)"></div>
+          <h3>Galletas</h3>
+          <p>De avena y nuez, especiales y de temporada.</p>
+        </li>
       </ul>
     </section>
 
-    <section id="tradicion" class="section split">
-      <h2>Sabores de región,<br>hechos con calma.</h2>
-      <div>
-        <p>Cada dulce lleva la tradición de los sabores de Chile. Trabajamos con ingredientes naturales seleccionados y en pequeñas tandas, para que todo salga como en casa.</p>
-        <dl class="facts">
-          <div><dt>100%</dt><dd>artesanal</dd></div>
-          <div><dt>Todo</dt><dd>Chile, con despacho</dd></div>
-        </dl>
-      </div>
+    <section class="statement wrap">
+      <p class="statement-text">Cada dulce lleva el sabor de una región de Chile.</p>
+      <p class="statement-sub">Trabajamos con ingredientes naturales seleccionados y recetas de siempre.</p>
     </section>
 
-    <section id="empresas" class="section band">
-      <div class="band-inner">
+    <section id="empresas" class="corporate wrap">
+      <!-- TODO: foto caja corporativa personalizada, 1400x1000 -->
+      <div class="ph ph-corp t4" role="img" aria-label="Foto de caja corporativa (pendiente)">
+        <span class="ph-note">Foto pendiente: caja con marca</span>
+      </div>
+      <div class="corp-copy">
         <p class="eyebrow">Regalos corporativos</p>
-        <h2>Experiencias dulces para tu equipo y tus clientes.</h2>
-        <p>Cajas personalizadas, con tu marca y en el volumen que necesites.</p>
-        <a href="#contacto" class="btn btn-light">Cotizar</a>
+        <h2>Cajas con tu marca para equipos y clientes.</h2>
+        <p>Personalizamos la caja, el contenido y el volumen de tu pedido.</p>
+        <a href="https://www.lilis.cl/contacto/" class="btn">Cotizar</a>
       </div>
     </section>
 
-    <section id="contacto" class="section cta">
-      <h2>¿Se te antojó?</h2>
-      <p>Compra online o escríbenos para pedidos especiales.</p>
-      <div class="actions center">
-        <a href="https://www.lilis.cl/tienda/" class="btn">Ir a la tienda</a>
-        <a href="https://www.lilis.cl/contacto/" class="link">Contacto →</a>
-      </div>
+    <section class="closing wrap">
+      <h2>Llevamos dulces artesanales a todo Chile.</h2>
+      <a href="https://www.lilis.cl/tienda/" class="btn">Comprar</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <span class="logo">lilis</span>
-    <span>© <span id="year"></span> Lilis · Dulcería artesanal</span>
+  <footer class="footer wrap">
+    <span class="wordmark">lilis</span>
+    <span>© <span id="year">2026</span> Lilis. Dulcería artesanal.</span>
   </footer>
 
   <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('menu');
-    toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
-    });
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menu.classList.remove('open');
-      toggle.setAttribute('aria-expanded', false);
-    }));
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
