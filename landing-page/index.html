@@ -15,8 +15,12 @@
   <header class="nav">
     <a href="#" class="wordmark">lilis</a>
     <nav class="nav-links" aria-label="Principal">
-      <a href="#productos">Productos</a>
+      <a href="#alfajores">Alfajores</a>
+      <a href="#dulces">Dulces</a>
+      <a href="#chocolates">Chocolates</a>
+      <a href="#cajas">Cajas de regalo</a>
       <a href="#empresas">Empresas</a>
+      <a href="#tiendas">Tiendas</a>
     </nav>
     <a href="https://www.lilis.cl/tienda/" class="btn btn-sm">Comprar</a>
   </header>
@@ -24,11 +28,11 @@
   <main>
     <section class="hero wrap">
       <div class="hero-copy">
-        <h1>Dulces chilenos,<br><span class="accent">hechos a mano.</span></h1>
-        <p class="hero-sub">Alfajores, chilenitos y cuchuflíes con ingredientes naturales y recetas de tradición.</p>
+        <h1>Un recuerdo dulce<br><span class="accent">de Coquimbo.</span></h1>
+        <p class="hero-sub">Alfajores, chocolates y dulces chilenos hechos a mano, para llevar de viaje o regalar.</p>
         <div class="hero-actions">
           <a href="https://www.lilis.cl/tienda/" class="btn">Comprar</a>
-          <a href="#productos" class="btn btn-ghost">Ver productos</a>
+          <a href="#tiendas" class="btn btn-ghost">Ver tiendas</a>
         </div>
       </div>
       <!-- TODO: foto hero, alfajores apilados sobre fondo neutro, 1200x1500 -->
@@ -39,39 +43,40 @@
 
     <section id="productos" class="products wrap">
       <h2>Lo que hacemos</h2>
-      <p class="section-sub">Seis clásicos de la dulcería chilena, 100% artesanales.</p>
+      <p class="section-sub">Dulcería chilena 100% artesanal, con ingredientes naturales seleccionados.</p>
 
       <ul class="bento">
-        <li class="cell cell-feature">
+        <li class="cell cell-feature" id="alfajores">
           <!-- TODO: foto alfajores, 1200x1200 -->
           <div class="ph t1" role="img" aria-label="Foto de alfajores (pendiente)"><span class="ph-note">Foto pendiente</span></div>
           <h3>Alfajores</h3>
           <p>Con manjar, bañados en chocolate o en cajas temáticas.</p>
         </li>
-        <li class="cell">
-          <div class="ph t2" role="img" aria-label="Foto de chilenitos (pendiente)"></div>
-          <h3>Chilenitos</h3>
-          <p>Hojarasca, manjar y merengue.</p>
+        <li class="cell" id="dulces">
+          <div class="ph t2" role="img" aria-label="Foto de dulces (pendiente)"></div>
+          <h3>Dulces</h3>
+          <p>Malvas de coco y chocolate, guagüitas y gomitas de fruta.</p>
         </li>
         <li class="cell">
           <div class="ph t3" role="img" aria-label="Foto de cuchuflíes (pendiente)"></div>
           <h3>Cuchuflíes</h3>
           <p>Tradicionales o con chocolate amargo o blanco.</p>
         </li>
-        <li class="cell">
-          <div class="ph t4" role="img" aria-label="Foto de cachitos (pendiente)"></div>
-          <h3>Cachitos</h3>
-          <p>Crujientes y rellenos.</p>
+        <li class="cell" id="chocolates">
+          <div class="ph t4" role="img" aria-label="Foto de chocolates (pendiente)"></div>
+          <h3>Chocolates</h3>
+          <p>Higos y papayitas bañados, y opciones veganas sin azúcar.</p>
         </li>
         <li class="cell">
-          <div class="ph t3" role="img" aria-label="Foto de trufas (pendiente)"></div>
-          <h3>Trufas</h3>
-          <p>Pequeñas e intensas.</p>
-        </li>
-        <li class="cell cell-wide">
-          <div class="ph t2" role="img" aria-label="Foto de galletas (pendiente)"></div>
+          <div class="ph t3" role="img" aria-label="Foto de galletas (pendiente)"></div>
           <h3>Galletas</h3>
           <p>De avena y nuez, especiales y de temporada.</p>
+        </li>
+        <li class="cell cell-wide" id="cajas">
+          <!-- TODO: foto cajas de regalo surtidas, 1600x400 -->
+          <div class="ph t1" role="img" aria-label="Foto de cajas de regalo (pendiente)"><span class="ph-note">Foto pendiente: cajas de regalo</span></div>
+          <h3>Cajas de regalo</h3>
+          <p>Surtidos listos para regalar o llevar en la maleta.</p>
         </li>
       </ul>
     </section>
@@ -91,6 +96,32 @@
         <h2>Cajas con tu marca para equipos y clientes.</h2>
         <p>Personalizamos la caja, el contenido y el volumen de tu pedido.</p>
         <a href="https://www.lilis.cl/contacto/" class="btn">Cotizar</a>
+      </div>
+    </section>
+
+    <section id="tiendas" class="stores wrap">
+      <h2>Visítanos</h2>
+      <div class="store-list">
+        <article class="store">
+          <h3>Avenida del Mar</h3>
+          <p class="store-addr">Av. del Mar 3500, Local 116</p>
+          <dl class="hours">
+            <div><dt>Domingo a jueves</dt><dd>10:00 a 20:00</dd></div>
+            <div><dt>Viernes y sábado</dt><dd>10:00 a 21:00</dd></div>
+          </dl>
+        </article>
+        <article class="store">
+          <h3>Coquimbo</h3>
+          <p class="store-addr">Av. Párroco Waldo Alcalde 401, Local 8</p>
+          <dl class="hours">
+            <div><dt>Lunes a sábado</dt><dd>10:30 a 20:30</dd></div>
+          </dl>
+        </article>
+        <div class="store-contact">
+          <h3>Pedidos y consultas</h3>
+          <p><a href="tel:+56962261712">+56 9 6226 1712</a></p>
+          <p><a href="mailto:ventas@lilis.cl">ventas@lilis.cl</a></p>
+        </div>
       </div>
     </section>
 
