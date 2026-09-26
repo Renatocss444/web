@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Lilis Dulcería Artesanal</title>
-  <meta name="description" content="Alfajores, chilenitos, cuchuflíes, trufas y galletas 100% artesanales, hechos con ingredientes naturales y recetas de tradición chilena.">
+  <title>Lili's Dulcería Artesanal</title>
+  <meta name="description" content="Alfajores, papayas confitadas, chocolates y dulces artesanales de Coquimbo. Hechos a mano para llevar de viaje o regalar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
 
   <header class="nav">
-    <a href="#" class="wordmark">lilis</a>
+    <a href="#" class="wordmark">Lili's</a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#alfajores">Alfajores</a>
       <a href="#dulces">Dulces</a>
@@ -35,9 +35,24 @@
           <a href="#tiendas" class="btn btn-ghost">Ver tiendas</a>
         </div>
       </div>
-      <!-- TODO: foto hero, alfajores apilados sobre fondo neutro, 1200x1500 -->
-      <div class="ph ph-hero" role="img" aria-label="Foto de alfajores (pendiente)">
-        <span class="ph-note">Foto pendiente: alfajores</span>
+      <img class="hero-img" src="media/papaya-frontal.webp" width="1125" height="2000"
+           alt="Caja de Papaya Confitadas de Lili's junto a papayas confitadas en un plato y una papaya fresca" fetchpriority="high">
+    </section>
+
+    <section id="papaya" class="feature wrap">
+      <video class="feature-video" src="media/papaya-video.mp4" poster="media/papaya-frontal.webp"
+             autoplay muted loop playsinline preload="metadata"
+             aria-label="Video de la caja de Papaya Confitadas de Lili's"></video>
+      <div class="feature-body">
+        <h2>Papaya confitada, un trozo de Chile.</h2>
+        <p>La papaya del norte chico, confitada a mano. Caja de 6 unidades, 300 g, lista para regalar o llevar en la maleta.</p>
+        <a href="https://www.lilis.cl/tienda/" class="btn">Comprar</a>
+        <div class="feature-shots">
+          <img src="media/papaya-cenital.webp" width="1254" height="1254" loading="lazy"
+               alt="Caja de Papaya Confitadas vista desde arriba con papaya fresca y papayas confitadas">
+          <img src="media/papaya-frontal-duo.webp" width="1125" height="2000" loading="lazy"
+               alt="Caja de Papaya Confitadas entre dos papayas frescas y platos con papaya confitada">
+        </div>
       </div>
     </section>
 
@@ -132,12 +147,19 @@
   </main>
 
   <footer class="footer wrap">
-    <span class="wordmark">lilis</span>
-    <span>© <span id="year">2026</span> Lilis. Dulcería artesanal.</span>
+    <span class="wordmark">Lili's</span>
+    <span>© <span id="year">2026</span> Lili's. Dulcería artesanal.</span>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Sin reproducción automática para quien prefiere menos movimiento
+    const video = document.querySelector('.feature-video');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.removeAttribute('autoplay');
+      video.pause();
+      video.controls = true;
+    }
   </script>
 </body>
 </html>

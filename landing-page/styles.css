@@ -132,6 +132,35 @@ h3 { font-size: 1.15rem; letter-spacing: -0.02em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.2rem; }
 .ph-hero { aspect-ratio: 4 / 5; background: var(--ph-1); }
 
+/* Portada con foto real */
+.hero-img {
+  width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 5;
+  object-fit: cover; object-position: 50% 62%;
+  border-radius: var(--radius); display: block;
+}
+
+/* Producto destacado: video vertical + texto + dos fotos */
+.feature {
+  display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem); align-items: center;
+  padding-block: clamp(4rem, 8vw, 7rem);
+  border-top: 1px solid var(--line);
+}
+.feature-video {
+  width: 100%; max-width: 100%; height: auto; aspect-ratio: 9 / 16;
+  object-fit: cover; border-radius: var(--radius);
+  background: var(--surface); display: block;
+}
+.feature-body > p { color: var(--muted); margin: 1.1rem 0 2rem; max-width: 46ch; }
+.feature-shots {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem;
+}
+.feature-shots img {
+  width: 100%; max-width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;
+  border-radius: var(--radius); display: block;
+}
+.feature-shots img:last-child { object-position: 50% 68%; }
+
 /* Productos: bento 4x3 con celdas exactas */
 .products { padding-block: clamp(4rem, 8vw, 7rem); }
 .section-sub { color: var(--muted); margin-top: 0.8rem; max-width: 60ch; }
@@ -214,7 +243,8 @@ h3 { font-size: 1.15rem; letter-spacing: -0.02em; }
 @media (max-width: 767px) {
   .nav { grid-template-columns: 1fr auto; }
   .nav-links { display: none; }
-  .hero, .corporate, .store-list { grid-template-columns: 1fr; }
+  .hero, .corporate, .store-list, .feature { grid-template-columns: 1fr; }
+  .feature-video { max-height: 80vh; width: auto; margin-inline: auto; }
   .ph-hero { aspect-ratio: 4 / 3; }
   .corp-copy { order: -1; }
 }

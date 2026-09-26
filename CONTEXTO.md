@@ -29,7 +29,10 @@ Otras ramas: `landing-page`, `claude/epic-goldberg-nhuah1`, `info`, `info-nutric
 ## Landing page (estado actual)
 - Hecha con la skill `design-taste-frontend`: tipografía **Geist**, paleta neutra fría (#f4f4f2 / #161616) con **un solo acento frambuesa** (#b3325a; oscuro #e3739a), modo oscuro automático, radios: botones píldora y fotos 16px, sin em-dashes (—).
 - Secciones: nav (Alfajores, Dulces, Chocolates, Cajas de regalo, Empresas, Tiendas + botón Comprar) → hero "Un recuerdo dulce de Coquimbo." → bento de productos (Alfajores grande, Dulces, Cuchuflíes, Chocolates, Galletas, Cajas de regalo ancho) → frase "Cada dulce lleva el sabor de una región de Chile." → Regalos corporativos (Cotizar) → Visítanos (2 tiendas + contacto) → cierre "Comprar" → footer.
-- **Faltan fotos reales**: los cuadros `.ph` son placeholders con `<!-- TODO -->`. Hay que reemplazarlos por fotos (ver Magnific abajo).
+- **Fotos reales (26-09-2026)**: la dueña mandó 5 fotos y 1 video de Papaya Confitadas hechos en Magnific. En `landing-page/media/`: `papaya-frontal.webp` (portada), `papaya-cenital.webp`, `papaya-frontal-duo.webp` y `papaya-video.mp4` (H.264, 9:16) en la sección nueva **"Papaya confitada, un trozo de Chile"** (`#papaya`). Se descartó la foto horizontal porque los sellos salieron deformados.
+- Ojo: en las fotos IA, la letra chica del empaque sale deformada ("By Muier", subtítulo, "Un trozo de Chile"). Sirven para web, pero conviene corregirlas con retoque antes de imprimir.
+- El resto del bento (alfajores, dulces, cuchuflíes, chocolates, galletas, cajas, empresas) sigue con placeholders `.ph`: faltan fotos de esos productos.
+- El nombre visible pasó de "lilis" a **Lili's**.
 - Pendiente: la dueña pidió que la marca sea **menos genérica** y que luzca más profesional; también se sugirió incluir el faro/estrellas en la web para coherencia con los empaques.
 - Vista previa pública con marca de ejemplo (no se puede publicar con la marca real Lili's como artifact): https://claude.ai/artifact/A9z1UxMLsYtYJmUKaewrix — se genera desde `landing-page/` reemplazando la marca y los datos por ejemplos.
 
@@ -63,8 +66,8 @@ Otras ramas: `landing-page`, `claude/epic-goldberg-nhuah1`, `info`, `info-nutric
 - La dueña quiere **ver todo dentro de Claude**. Solución pendiente: que agregue `pikaso.cdnpk.net` (y opcional `ak-data.magnific.com`) a Network access del entorno en claude.ai/code → entorno → Edit. Le costó encontrar el menú; ofrecer ayuda con capturas.
 
 ## Pendientes
-1. Rehacer el video de Papaya Confitadas con la toma A o B.
-2. Poner fotos reales en la landing (Foto 2 u otras) una vez que se puedan descargar.
+1. ~~Video de Papaya Confitadas~~: la dueña lo resolvió en Magnific y ya está en la landing.
+2. Fotos de los demás productos (alfajores, dulces, cuchuflíes, chocolates, galletas, cajas, caja corporativa) para reemplazar los placeholders.
 3. Mejorar la landing: más profesional y con identidad propia (faro, estrellas), sin perder minimalismo.
 4. Reverso del empaque del alfajor y versiones para otros sabores (higo, maicena, whisky, naranja).
 5. Ideas de contenido para Instagram/Reels (ya se propusieron 10; favoritas: "lo que te tienes que llevar de Coquimbo", "así se hace un alfajor", ASMR del mordisco).
